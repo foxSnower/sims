@@ -1,0 +1,1 @@
+export const API_WX_SERVER = 'http://172.16.200.112:30111/cls/core/

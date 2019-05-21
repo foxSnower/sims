@@ -1,0 +1,100 @@
+@import "./reset";
+
+/**
+ * 解决谷歌浏览器中的input背景色默认是黄色
+ */
+ input:-webkit-autofill {
+   -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+ }
+ 
+/**
+ * 虽然耗费性能，但性价比高
+ */
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+/**
+ * emmmmm... 有点刺眼
+ */
+body {
+    background-color: #fff;
+    color:#606266;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**
+ * is 系列类
+ */
+// .is-circle {
+//   border-radius: 50%;
+// }
+
+// .is-left {
+//   float: left;
+// }
+
+// .is-right {
+//   float: right;
+// }
+
+.is-clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.is-nomargin {
+  margin: 0 !important;
+}
+
+.is-full {
+  width: 100% !important;
+}
+
+
+
+/**
+ * 滚动条修饰
+ */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background-color: #e2e2e2;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background-color: #e2e2e2;
+}
+
+
+/**
+ * CSS 动画
+ */
+.slide-fade-enter-active {
+    transition: all 0.3s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.3s ease;
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+    transform: translateY(-100px);
+    opacity: 0;
+}
+

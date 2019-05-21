@@ -1,0 +1,291 @@
+/**
+ * 内容区域的基本样式
+ */
+
+#app {
+ 
+  iframe.hongte-view {
+    margin: 0;
+  }
+
+  .hongte-view {
+    margin: 10px;
+    position: relative;
+    min-height: 500px;
+  }
+  .ht-warning{
+    color: #f56c6c;
+  }
+  /*
+ * 表格
+ */
+  .hongte-table {
+    // margin-top: 20px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+
+    .cell>.el-button {
+      margin: 0;
+    }
+
+    .hongte-table-align {
+      .cell {
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+      }
+    }
+
+    .fa {
+      padding-right: 5px;
+    }
+
+    .el-button--mini {
+      padding: 7px 10px;
+      margin-left: 5px;
+    }
+
+  }
+
+  .el-table th {
+    background: #E0E8F4;
+  }
+
+  /*上传附件
+  */
+  .el-upload {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+  }
+
+  .el-upload-list--picture-card .el-upload-list__item {
+    margin-right: 8px;
+    vertical-align: top;
+  }
+
+  /* 菜单折叠的样式*/
+  .el-menu--collapse {
+    .el-submenu__title>span {
+      display: none;
+    }
+
+    .el-submenu__icon-arrow {
+      display: none;
+    }
+
+  }
+
+  /*标签样式**/
+  // .el-tabs__item {
+  //   background: transparent;
+  // }
+  /**
+ * 分页样式
+ */
+  .hongte-Pagination {
+    margin: 20px;
+
+    .el-input__inner {
+      height: 28px;
+      line-height: 28px;
+    }
+
+    .el-input__icon {
+      line-height: 28px;
+    }
+  }
+
+  /**
+ * 美化card头部的样式
+ */
+  .hongte-query-card {
+    .hongte-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .el-card__header {
+      padding: 10px 20px;
+    }
+
+    .el-card__body {
+      padding: 10px;
+    }
+  }
+
+  /**
+ * 鸿特典型的查询条件表单
+ */
+  .ht-form-btn {
+    text-align: center;
+  }
+
+  .hongte-query-form {
+    display: flex;
+    flex-wrap: wrap;
+
+    .el-form-item {
+      display: flex;
+      margin-right: 0px;
+      padding-right: 30px;
+      // width: 25%;
+    }
+
+
+
+    .el-form-item--small .el-form-item__label {
+      line-height: 1.2;
+      padding-top: 9px;
+    }
+
+    .el-form-item__content {
+      flex: 1;
+    }
+
+    .el-select,
+    .el-date-editor--date {
+      width: 100%;
+    }
+
+    .el-date-editor .el-range-separator {
+      width: 20px;
+    }
+
+    .el-range-editor.el-input__inner,
+    .el-cascader {
+      width: 100%;
+    }
+
+    .el-date-editor.el-input {
+      width: 100%;
+    }
+  }
+
+  /**
+ * 饿了么替换补丁
+ */
+  .el-main {
+    padding: 5px;
+  }
+
+  .el-table {
+    margin-top: 10px;
+
+    .info-row {
+      background: #eee;
+    }
+
+  }
+
+  .el-tabs__header {
+    margin: 0;
+  }
+
+  .el-form {
+    .line {
+      text-align: center;
+    }
+  }
+
+  //折叠面板样式修改
+  .apply-box-card .el-card__body {
+    min-height: calc(100vh - 200px);
+    margin-bottom: 80px;
+  }
+
+  .el-collapse-item__header {
+    background-color: #f2f2f2;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .el-collapse,
+  .el-collapse-item__wrap {
+    border: none;
+  }
+
+  /**
+* 针对steps组件内按钮的样式
+*/
+  .ht-add .el-button {
+    padding: 0;
+  }
+
+  .f-item1 {
+    width: 100% !important;
+  }
+
+  /**
+* 自适应设计
+*/
+  .hongte-query-form .f-item,
+  .f-item {
+    width: 25%;
+  }
+
+  .hongte-query-form .f-item2 {
+    width: 50%;
+  }
+
+  .hongte-query-form .f-item3 {
+    width: 33.3%;
+  }
+
+  @media screen and (max-width: 1920px) {
+
+
+    .hongte-query-form .f-item,
+    .f-item {
+      width: 25%;
+    }
+
+    .hongte-query-form .f-item2 {
+      width: 50%;
+    }
+
+    .hongte-query-form .f-item3 {
+      width: 33.3%;
+    }
+  }
+
+  @media screen and (max-width: 1640px) {
+
+    .hongte-query-form .f-item,
+    .hongte-query-form .f-item3,
+    .f-item,
+    .f-item3,
+      {
+      width: 33.3%;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+
+
+    .hongte-query-form .f-item,
+    .hongte-query-form .f-item2,
+    .hongte-query-form .f-item3,
+    .f-item,
+    .f-item2,
+    .f-item3 {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+
+
+    .hongte-query-form .f-item,
+    .hongte-query-form .f-item2,
+    .hongte-query-form .f-item3,
+    .f-item,
+    .f-item2,
+    .f-item3 {
+      width: 100%;
+    }
+  }
+}

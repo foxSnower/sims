@@ -1,0 +1,45 @@
+@charset 'utf-8';
+
+// @import './element-green.scss';
+// @import './element-pink.scss';
+// @import './element-blue.scss';
+// @import './element-black.scss';
+
+// $theme-color:$--color-primary;
+// $theme-color-deep:$--color-primary-active;
+// $border-color:#f2f2f2;
+
+$theme-color:#56c499;
+$theme-color-deep:#337b60;
+$border-color:#f2f2f2;
+$--color-primary:#56c499;
+
+
+@mixin borderB {
+  position: relative;
+  &:after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: $border-color;
+  }
+ 
+}
+
+
+.custom-56C499 .el-menu-item.is-active {
+  border-left: 3px solid #56C499;
+}
+
+.custom-F3ACAC .el-menu-item.is-active {
+  border-left: 3px solid #F3ACAC;
+}
+.custom-86B4F3 .el-menu-item.is-active {
+  border-left: 3px solid #86B4F3;
+}
+.custom-B994DD .el-menu-item.is-active {
+  border-left: 3px solid #B994DD;
+}
